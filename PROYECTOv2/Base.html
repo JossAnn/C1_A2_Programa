@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foro</title>
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="Style3.css">
+        <!-- Si se quisieran guardar los correos hasta cerrando todas las páginas, que se elimine la siguiente linea de codigo
+             caso contrario que se deje como tal y como está -->
+        <script src="index.js"></script>
+        <!-- Si llegase a elegir la opcion de seguir agregando datos y no eliminarlos incluso regresando a la pagina
+             base, y posterior a eso quiere eliminar los datos, que aplique localStorage.removeItem('listaUsuarios') 
+             Eso eliminará hasta el registro hasta de los datos almacenados manualmente, por lo que posterior a la
+             eliminación se debe volver a cargar el script index.js 
+             :3 -->
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">
+                <a href="Base.html:location.reload()" style="padding-left:20px;padding-right:20px;">
+           <!-- <a href="Base.html" style="padding-left:20px;padding-right:20px;"> -->
+                    <img src="Img/Logo.png" width="250px" align="middle">
+                </a>
+            </div>
+            <nav>
+                <a  href="Inicio.html" class="third" class="nav-link" id="inicio"> Iniciar sesion </a>
+                <a  href="Registro.html" class="third" class="nav-link" id="registro"> Registrarme </a>
+            </nav>
+        </header>
+        <br>
+
+        <div class="contenido" style="padding-bottom: 10%;">
+            <div class="columns"> <!--Aquí inicia el contenido-->
+                <div class="column is-half">
+                    <div class="foros"> <!-- Aquí empieza lo de la sección de los foros -->
+                        <!-- Colocar la descripción abajo del tema-->
+                            
+                        <!-- Hacer que se levante tantito cuandos se pase el cursor -->
+                        <a href="ChatPageBase.html">
+                            <div class="cuadradoForo">
+                                <img src="Img/Tema1.jpg" width="130px" style="float:left;"> <!-- Imagen del foro -->
+                                <p>ㅤㅤMusica: Compositor Indi del año. <br>
+                                    <p style="font-size: 1vw;">Probablemente te estarás preguntando que es esto,  que tipo de genero de música es, de donde proviene, y que tipo de música es. Bueno la verdad si escuchas música del genero rock es mas que probable que has escuchado por lo menos una canción indie.</p>      <!-- Descripción del foro -->   
+                                </p>
+                            </div>
+                        </a>
+    
+                        <br clear="left">
+    
+                        <a href="ChatPageBase1.html">
+                            <div class="cuadradoForo">
+                                <img src="Img/Tema2.jpg" width="130px" style="float:left;"> <!-- Imagen del foro -->
+                                <p>ㅤㅤTecnologia: Robotica e IA. <br>
+                                    <p style="font-size: 1vw;">Robótica e Inteligencia Artificial son dos tecnologías que, si bien suelen ir de la mano, esto no significa que sean estrictamente lo mismo. En este artículo te contamos cuáles son sus similitudes y diferencias y por qué se trata de un tándem...</p>      <!-- Descripción del foro -->   
+                                </p>
+                            </div>
+                        </a>
+    
+                        <br clear="left">
+    
+                        <a href="ChatPageBase2.html">
+                            <div class="cuadradoForo">
+                                <img src="Img/Tema3.jpg" width="130px" style="float:left;"> <!-- Imagen del foro -->
+                                <p>ㅤㅤCultura: Historia y Arte. <br>
+                                    <p style="font-size: 1vw;">A lo largo del tiempo el arte se ha clasificado de muy diversa manera, desde la distinción medieval entre artes liberales y artes vulgares (o «mecánicas»), pasando por la moderna distinción entre bellas artes y artes menores o aplicadas.</p>      <!-- Descripción del foro -->   
+                                </p>
+                            </div>
+                        </a>
+    
+                        <br clear="left">
+    
+                        <a href="ChatPageBase3.html">
+                            <div class="cuadradoForo">
+                                <img src="Img/Tema4.jpg" width="130px" style="float:left;"> <!-- Imagen del foro -->
+                                <p>ㅤㅤNoticias: Premios, Salon de la fama. <br>
+                                    <p style="font-size: 1vw;">Este reconocimiento se da álbumes y canciones de todos los géneros incluyendo música clásica, rock, country, R&B, ópera, teatro y filmes. Actualmente hay más de 850 galardonados. The Beatles son los artistas con más entrada en la lista con 7 álbumes...</p>      <!-- Descripción del foro --> 
+                                </p>
+                            </div>
+                        </a>
+    
+                        <br clear="left">
+    
+                        <a href="ChatPageBase4.html">
+                            <div class="cuadradoForo">
+                                <img src="Img/Tema5.jpg" width="130px" style="float:left;"> <!-- Imagen del foro -->
+                                <p>ㅤㅤFisica: Espacial y aeronautica. <br>
+                                    <p style="font-size: 1vw;">Caos determinista, sistemas complejos, intermitencia y sistemas estocásticos. Cosmología: estructura del universo a gran escala. Dinámica y electrodinámica de amarras espaciales. Dinámica molecular en nanosistemas. Estudio teórico de materiales fotovoltaicos.</p><!-- Descripción del foro --> 
+                                </p>
+                                        
+                            </div>
+                        </a>
+    
+                        <br clear="left">
+    
+                        <a href="ChatPageBase5.html">
+                            <div class="cuadradoForo">
+                                <img src="Img/Tema6.jpg" width="130px" style="float:left;"> <!-- Imagen del foro -->
+                                <p>ㅤㅤReligión: Debate serio.<br>
+                                    <p style="font-size: 1vw;">Muchas religiones tienen narrativas, símbolos e historias sagradas que pretenden explicar el sentido de la vida o explicar el origen de la vida o el universo. A partir de estas creencias sobre el cosmos y la naturaleza humana, las personas pueden derivar una moral.</p>      <!-- Descripción del foro -->   
+                                </p>
+                            </div>
+                        </a>
+    
+                        <br clear="left">
+                    </div> <!-- Aquí termina lo de la sección de los foros -->
+                            
+                </div> <!-- Aquí termina lo de la sección de los foros -->
+            </div>
+            <div class="column">
+                <!-- Espacio no utilizado -->
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <footer>&copy Derechos reservados</footer>
+        </div>
+    </body>
+</html>

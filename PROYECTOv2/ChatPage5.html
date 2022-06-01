@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <title>Foro</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="Style3.css">
+    <script src="inicio.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Home3.html" style="padding-left:20px;padding-right:20px;">
+                <img src="Img/Logo.png" width="250px" align="middle">
+            </a>
+        </div><!-- 
+        <nav>
+            <a  href="" class="third" class="nav-link" id="foro-azar"> Foro al azar </a>
+            <a  href="" class="third" class="nav-link" id="changforo"> Cambiar tema </a>
+            <a  href="" class="third" class="nav-link" id="crearforo"> Crear foro nuevo </a>
+            <a  href="" class="third" class="nav-link" id="mis-foros"> Mis Foros </a>
+        </nav> -->
+    </header>
+    
+    <br>
+
+<div class="contenido">
+    <div class="columns">
+        <div class="column is-half">
+            <div class="foros"> 
+                
+                <p>
+                    Muchas religiones tienen narrativas, símbolos e historias sagradas que pretenden explicar el sentido de la vida o explicar el origen de la vida o el universo. A partir de estas creencias sobre el cosmos y la naturaleza humana, las personas pueden derivar una moral, ética o leyes religiosas o un estilo de vida.
+                </p>
+
+                
+                <!-- Aquí está el textArea para escribir comentario -->
+
+
+            </div>
+            
+            <br>
+            
+            <div class="foros"> <!-- Aquí ira el cuadrado con el contenido del div -->
+                <div class="column"> 
+                    <div>COMENTARIOS PRINCIPALES</div>
+                    <div class="comentarios " id="theComment"> <!-- Aquí ira el cuadrado con el contenido del div -->
+                            <div class="texto">
+                                <img src="Img/CUADRADO.png" width="20px" style="float:left;"> <!-- Imagen del foro -->
+                                <p style="color: black;"> Alejandro: </p>
+                                <p style="color: black;" class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eligendi vitae debitis modi accusamus maxime nulla aut delectus veniam odio porro, consequuntur illum, mollitia atque temporibus quisquam laborum harum! Tempore!</p>
+                            </div>
+                            <div class="texto"> <!-- Aquí está donde se mostrará el comentario -->
+                                <img id="cosoOcultar" src="Img/CUADRADO.png" width="20px" style="float:left;"> <!-- Imagen del foro -->
+                                <p id="cosoOcultar" style="color: black;">Proximo comentario: </p>
+                                <p style="color: black;" id="simulacionComentario" class="texto"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="foros">
+                <div>
+                    <div>
+                        <label style="padding-left: 20%;">COMENTAR</label>
+                    </div>
+                    <div>
+                        <textarea id="contenidoID" rows="5" cols="50"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="comentar()">Enviar</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="column"></div>
+        <div class="column" align="center"> <!-- Aqui inicia el registro / incio de sesión -->
+            <div class="bienvenida">
+                <label><b>BIENVENIDO</b></label>
+                <br>
+                <label>Usuario:</label><br>
+                <label id="nameUser"></label>
+                <br><br>
+                <a href="Base.html"><button style="float: center;">Cerrar sesión</button></a>
+            </div>
+        </div> <!-- Aqui termina el registro / incio de sesión -->
+    </div>
+</div>
+
+    <div>
+        <footer>&copy Derechos reservados</footer>
+    </div>
+    <script src="ChatPage.js"></script>
+    <script>
+        nombreAux = JSON.parse(localStorage.getItem("auxNombre"));
+        let nombre = nombreAux[0].nombre
+        document.getElementById("nameUser").innerHTML = nombre;
+    </script>
+</body>
+</html>

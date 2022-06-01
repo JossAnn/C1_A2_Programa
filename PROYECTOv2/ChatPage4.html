@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>Foro</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="Style3.css">
+    <script src="inicio.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="Home3.html" style="padding-left:20px;padding-right:20px;">
+                <img src="Img/CUADRADO.png" width="250px" align="middle">
+            </a>
+        </div><!-- 
+        <nav>
+            <a  href="" class="third" class="nav-link" id="foro-azar"> Foro al azar </a>
+            <a  href="" class="third" class="nav-link" id="changforo"> Cambiar tema </a>
+            <a  href="" class="third" class="nav-link" id="crearforo"> Crear foro nuevo </a>
+            <a  href="" class="third" class="nav-link" id="mis-foros"> Mis Foros </a>
+        </nav> -->
+    </header>
+    
+    <br>
+
+<div class="contenido">
+    <div class="columns">
+        <div class="column is-half">
+            <div class="foros"> 
+                <div class="tituloforo">
+                    <img src="Img/Tema5.jpg" width="200px">
+                    <br>Fisica: Espacial y aeronautica.
+                </div>
+                <p>
+                    Caos determinista, sistemas complejos, intermitencia y sistemas estocásticos. <br>
+Cosmología: estructura del universo a gran escala.<br>
+Dinámica y electrodinámica de amarras espaciales.<br>
+Dinámica molecular en nanosistemas.<br>
+Estudio teórico de materiales fotovoltaicos de alta eficiencia.<br>
+Física cuántica y estadística: transformaciones de escala.<br>
+Física no lineal.<br>
+Fusión por Confinamiento Inercial.<br>
+Interacción laser-plasma, transporte radiación y magnetohidrodinámica.<br>
+Innovación educativa.<br>
+Motores por plasma de baja potencia para propulsión espacial.<br>
+Métodos computacionales para la resolución de las ecuaciones cinéticas de los plasmas.
+                </p>
+
+                
+                <!-- Aquí está el textArea para escribir comentario -->
+
+
+            </div>
+            
+            <br>
+            
+            <div class="foros"> <!-- Aquí ira el cuadrado con el contenido del div -->
+                <div class="column"> 
+                    <div>COMENTARIOS PRINCIPALES</div>
+                    <div class="comentarios " id="theComment"> <!-- Aquí ira el cuadrado con el contenido del div -->
+                            <div class="texto">
+                                <img src="Img/CUADRADO.png" width="20px" style="float:left;"> <!-- Imagen del foro -->
+                                <p style="color: black;"> Maria: </p>
+                                <p style="color: black;">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum consequatur similique consequuntur atque, ipsam voluptatibus alias quisquam praesentium iusto cupiditate mollitia perferendis earum repudiandae est quidem nihil beatae possimus deserunt? <br>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cupiditate molestiae, ipsam error facilis cum sequi perferendis quia quaerat! Eligendi ipsam, necessitatibus sapiente at sint aliquid culpa obcaecati deleniti minima!
+                                </p>
+                            </div>
+                            <div class="texto"> <!-- Aquí está donde se mostrará el comentario -->
+                                <img id="cosoOcultar" src="Img/CUADRADO.png" width="20px" style="float:left;"> <!-- Imagen del foro -->
+                                <p id="cosoOcultar" style="color: black;">Proximo comentario: </p>
+                                <p style="color: black;" id="simulacionComentario" class="texto"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="foros">
+                <div>
+                    <div>
+                        <label style="padding-left: 20%;">COMENTAR</label>
+                    </div>
+                    <div>
+                        <textarea id="contenidoID" rows="5" cols="50"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="comentar()">Enviar</button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="column"></div>
+        <div class="column" align="center"> <!-- Aqui inicia el registro / incio de sesión -->
+            <div class="bienvenida">
+                <label><b>BIENVENIDO</b></label>
+                <br>
+                <label>Usuario:</label><br>
+                <label id="nameUser"></label>
+                <br><br>
+                <a href="Base.html"><button style="float: center;">Cerrar sesión</button></a>
+            </div>
+        </div> <!-- Aqui termina el registro / incio de sesión -->
+    </div>
+</div>
+
+    <div>
+        <footer>&copy Derechos reservados</footer>
+    </div>
+    <script src="ChatPage.js"></script>
+    <script>
+        nombreAux = JSON.parse(localStorage.getItem("auxNombre"));
+        let nombre = nombreAux[0].nombre
+        document.getElementById("nameUser").innerHTML = nombre;
+    </script>
+</body>
+</html>

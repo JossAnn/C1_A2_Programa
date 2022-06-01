@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="Style3.css">
+        <title>DatosRegistro</title>
+        <script src="registro.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="Base.html" style="padding-left:20px;padding-right:20px;">
+                    <img src="Img/Logo.png" width="250px" align="middle">
+                </a>
+            </div>
+            <nav>
+                <a  href="Inicio.html" class="third" class="nav-link" id="inicio"> Iniciar sesion </a>
+                <!--
+                <a  href="" class="third" class="nav-link" id="foro-azar"> Foro al azar </a>
+                <a  href="" class="third" class="nav-link" id="changforo"> Cambiar tema </a>
+                <a  href="" class="third" class="nav-link" id="crearforo"> Crear foro nuevo </a>
+                <a  href="" class="third" class="nav-link" id="mis-foros"> Mis Foros </a>-->
+            </nav>
+        </header>
+        <div class="columns" style="padding-bottom: 10%;">
+            <div class="column is-one-third"></div>
+            <div class="column" align="center" style="padding-top: 45px;">
+                <div class="foros">
+                    <br>
+
+                    <label><b>Crear cuenta nueva.</b></label>
+                    <br><br>
+                    <label>Usuario:</label><br>
+                    <input class="input is-link" type="text" id="txtU" placeholder="Escribe tu nombre">
+                    <br><br>
+                    <label>Correo Electronico:</label><br>
+                    <input class="input is-link" type="text" id="txtM" placeholder="Introduce un Correo de registro">
+                    <br><br>
+                    <Label>Contraseña:</Label><br>
+                    <input class="input is-link" type="text" id="txtP" placeholder="Escribe tu Contraseña">
+                    <br><br>
+                    <Label>Confirmar Contraseña:</Label><br>
+                    <input class="input is-link" type="text" id="txtPA" placeholder="Vuelve a escribir tu Contraseña">
+                    <br><br>
+
+                    <button onclick="getDatosR()">Registrarse</button>
+                    <a href="Base.html"><button>Cancelar</button></a> <!-- Home3 -->
+                     
+                </div>
+            </div>
+            <div class="column"></div>
+        </div>
+        <div>
+            <footer>&copy Derechos reservados</footer>
+        </div>
+    </body>
+</html>
