@@ -1,0 +1,68 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs{
+    width: 40%;
+    padding: 2rem;
+    color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(18, 0, 34, 0.669);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+h1{
+    letter-spacing: 10px;
+}
+p{
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+.p{
+    text-align: center;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+.datos.necesarios{
+    border-bottom: 1px;
+    border-color: azure;
+    border-bottom-style: solid;
+}
+.datos.opcionales{
+    border-bottom: 1px;
+    border-color: azure;
+    border-bottom-style: solid;
+}
+.datos.extra{
+    min-width: 15rem;
+}
+.input{
+    min-height: 2rem;
+    min-width: 15rem;
+    border-radius: 0.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.input.edad{
+    min-width: 7rem;
+    max-width: 8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.boton{
+    min-height: 2rem;
+    min-width: 7rem;
+    max-width: 8rem;
+    border-radius: 0.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.color{
+    border-radius: 0.5rem;
+}
